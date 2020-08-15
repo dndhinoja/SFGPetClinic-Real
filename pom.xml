@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -9,17 +11,17 @@
 	</parent>
 	<groupId>com.nd</groupId>
 	<artifactId>SFGPetClinic-Real</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
-	
+	<version>0.0.3-SNAPSHOT</version>
+
 	<packaging>pom</packaging>
 	<name>SFGPetClinic-Real</name>
 	<description>SFGPetClinic-Real Project</description>
-	
+
 	<modules>
 		<module>pet-clinic-data</module>
 		<module>pet-clinic-web</module>
 	</modules>
-	
+
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -57,13 +59,20 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<goal>install</goal>
+					<autoVersionSubModules>true</autoVersionSubModules>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	<!-- <distributionManagement>
+		<repository>
+			<id> internal.repo</id>
+			<name>Internal repo</name>
+			<url>file:///Home/WORK/GIT_REPO/de</url>
+		</repository>
+	</distributionManagement> -->
 	<scm>
 		<developerConnection>scm:git:https://github.com/dndhinoja/SFGPetClinic-Real.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+	</scm>
 
 </project>
