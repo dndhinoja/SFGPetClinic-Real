@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.nd</groupId>
 		<artifactId>SFGPetClinic-Real</artifactId>
-		<version>y</version>
+		<version>1.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>pet-clinic-data</artifactId>
 	<properties>
