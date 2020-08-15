@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.nd</groupId>
 	<artifactId>SFGPetClinic-Real</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
 	<name>SFGPetClinic-Real</name>
@@ -71,7 +71,7 @@
 	</distributionManagement> -->
 	<scm>
 		<developerConnection>scm:git:https://github.com/dndhinoja/SFGPetClinic-Real.git</developerConnection>
-	  <tag>SFGPetClinic-Real-0.0.3</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 </project>
