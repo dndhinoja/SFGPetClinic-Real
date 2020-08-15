@@ -1,4 +1,4 @@
-package com.nd.SFGPetClinicReal.Model;
+package model;
 
 public class Person {
 	private String firstName;

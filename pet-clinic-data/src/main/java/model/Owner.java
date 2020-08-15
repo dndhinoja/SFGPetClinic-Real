@@ -1,4 +1,4 @@
-package com.nd.SFGPetClinicReal.Model;
+package model;
 
 public class Owner extends Person{
 
