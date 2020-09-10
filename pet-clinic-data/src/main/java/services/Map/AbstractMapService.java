@@ -7,18 +7,16 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
-import com.mysql.cj.x.protobuf.MysqlxCrud.Collection;
-
 import model.BaseEntity;
 
-public abstract class AbstractMapService<T extends BaseEntity, Id extends Long> {
+public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 	protected Map<Long, T> map = new HashMap<>();
 
 	Set<T> findAll() {
 		return new HashSet<>(map.values());
 	}
 
-	T findById(Id id) {
+	T findById(ID id) {
 		return map.get(id);
 	}
 
@@ -39,7 +37,7 @@ public abstract class AbstractMapService<T extends BaseEntity, Id extends Long> 
 		map.entrySet().removeIf(entry -> entry.getValue().equals(object));
 	}
 
-	void deleteById(Id id) {
+	void deleteById(ID id) {
 		map.remove(id);
 
 	}
