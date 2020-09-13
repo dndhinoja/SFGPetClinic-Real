@@ -9,7 +9,7 @@ import model.PetType;
 import services.PetTypeService;
 
 @Service
-public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService{
+public class PetTypeMapService extends AbstractMapService<PetType, Long>implements PetTypeService{
 
 	@Override
 	public Set<PetType> findAll() {
@@ -35,4 +35,5 @@ public class PetTypeMapService extends AbstractMapService<PetType, Long> impleme
 	public void deleteById(Long id) {
 		super.deleteById(id);
 	}
+
 }

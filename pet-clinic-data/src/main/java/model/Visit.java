@@ -5,19 +5,20 @@ import java.time.LocalDate;
 public class Visit extends BaseEntity{
 	
 	private LocalDate date;
-	private String discription;
+	private String description;
 	private Pet pet;
+	
 	public LocalDate getDate() {
 		return date;
 	}
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
-	public String getDiscription() {
-		return discription;
+	public String getDescription() {
+		return description;
 	}
-	public void setDiscription(String discription) {
-		this.discription = discription;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	public Pet getPet() {
 		return pet;
