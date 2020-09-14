@@ -1,10 +1,13 @@
 package com.nd.SFGPetClinicReal.bootstrap;
 
+import java.time.LocalDate;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import model.Owner;
+import model.Pet;
 import model.PetType;
 import model.Speciality;
 import model.Vet;
@@ -43,7 +46,17 @@ public class DataLoader implements CommandLineRunner {
 		Owner owner1 = new Owner();
 		owner1.setFirstName("Nirr");
 		owner1.setLastName("Dhi");
+		owner1.setAddress("Hillsboro");
+		owner1.setCity("portland");
+		owner1.setTelephone("1234567");
 
+		Pet mikePet = new Pet();
+		mikePet.setPetType(savedDogPetType);
+		mikePet.setOwner(owner1);
+		mikePet.setBirthDate(LocalDate.now());
+		mikePet.setName("Dippy");
+		owner1.getPets().add(mikePet);
+		
 		ownerService.save(owner1);
 
 		Vet vet1 = new Vet();
@@ -57,7 +70,17 @@ public class DataLoader implements CommandLineRunner {
 		Owner owner2 = new Owner();
 		owner2.setFirstName("Dip");
 		owner2.setLastName("kad");
+		owner2.setAddress("Pooja");
+		owner2.setCity("DHor");
+		owner2.setTelephone("1234567");
 
+		Pet kikeePet = new Pet();
+		kikeePet.setPetType(savedDogPetType);
+		kikeePet.setOwner(owner2);
+		kikeePet.setBirthDate(LocalDate.now());
+		kikeePet.setName("Dippy");
+		owner2.getPets().add(kikeePet);
+		
 		ownerService.save(owner2);
 
 		Vet vet2 = new Vet();
