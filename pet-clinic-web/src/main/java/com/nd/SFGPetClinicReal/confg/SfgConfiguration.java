@@ -10,9 +10,11 @@ import com.nd.SFGPetClinicReal.bootstrap.DataLoader;
 
 import services.OwnerService;
 import services.PetTypeService;
+import services.SpecialitiesService;
 import services.VetService;
 import services.Map.OwnerServiceMap;
 import services.Map.PetTypeMapService;
+import services.Map.SpecialitiesMapService;
 import services.Map.VetServiceMap;
 
 @Configuration
@@ -29,5 +31,8 @@ public class SfgConfiguration {
 	public PetTypeService petTpeDataLoader() {
 		return new PetTypeMapService();
 	}
-	
+	@Bean
+	public SpecialitiesService specialityDataLoader() {
+		return new SpecialitiesMapService();
+	}
 }
