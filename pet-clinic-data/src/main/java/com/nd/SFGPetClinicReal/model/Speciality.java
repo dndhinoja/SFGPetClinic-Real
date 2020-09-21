@@ -1,4 +1,4 @@
-package model;
+package com.nd.SFGPetClinicReal.model;
 
 public class Speciality extends BaseEntity{
 	

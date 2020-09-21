@@ -6,18 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import model.Owner;
-import model.Pet;
-import model.PetType;
-import model.Speciality;
-import model.Vet;
-import services.OwnerService;
-import services.PetService;
-import services.PetTypeService;
-import services.SpecialitiesService;
-import services.VetService;
-import services.Map.OwnerServiceMap;
-import services.Map.VetServiceMap;
+import com.nd.SFGPetClinicReal.model.Owner;
+import com.nd.SFGPetClinicReal.model.Pet;
+import com.nd.SFGPetClinicReal.model.PetType;
+import com.nd.SFGPetClinicReal.model.Speciality;
+import com.nd.SFGPetClinicReal.model.Vet;
+import com.nd.SFGPetClinicReal.services.OwnerService;
+import com.nd.SFGPetClinicReal.services.PetService;
+import com.nd.SFGPetClinicReal.services.PetTypeService;
+import com.nd.SFGPetClinicReal.services.SpecialitiesService;
+import com.nd.SFGPetClinicReal.services.VetService;
+import com.nd.SFGPetClinicReal.services.Map.OwnerServiceMap;
+import com.nd.SFGPetClinicReal.services.Map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {

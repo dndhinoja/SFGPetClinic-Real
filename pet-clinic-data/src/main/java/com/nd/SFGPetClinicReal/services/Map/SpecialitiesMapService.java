@@ -1,11 +1,11 @@
-package services.Map;
+package com.nd.SFGPetClinicReal.services.Map;
 
 import java.util.Set;
 
 import org.springframework.stereotype.Service;
 
-import model.Speciality;
-import services.SpecialitiesService;
+import com.nd.SFGPetClinicReal.model.Speciality;
+import com.nd.SFGPetClinicReal.services.SpecialitiesService;
 
 @Service
 public class SpecialitiesMapService extends AbstractMapService<Speciality, Long> implements SpecialitiesService{

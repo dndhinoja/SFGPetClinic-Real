@@ -1,4 +1,4 @@
-package model;
+package com.nd.SFGPetClinicReal.model;
 
 import java.util.HashSet;
 import java.util.Set;

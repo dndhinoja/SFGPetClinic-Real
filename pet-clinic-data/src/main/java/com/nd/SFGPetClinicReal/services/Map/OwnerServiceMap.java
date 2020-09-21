@@ -1,4 +1,4 @@
-package services.Map;
+package com.nd.SFGPetClinicReal.services.Map;
 
 import java.util.Set;
 
@@ -6,11 +6,11 @@ import javax.management.RuntimeErrorException;
 
 import org.springframework.stereotype.Service;
 
-import model.Owner;
-import model.Pet;
-import services.OwnerService;
-import services.PetService;
-import services.PetTypeService;
+import com.nd.SFGPetClinicReal.model.Owner;
+import com.nd.SFGPetClinicReal.model.Pet;
+import com.nd.SFGPetClinicReal.services.OwnerService;
+import com.nd.SFGPetClinicReal.services.PetService;
+import com.nd.SFGPetClinicReal.services.PetTypeService;
 @Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 

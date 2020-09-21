@@ -1,8 +1,8 @@
-package services;
+package com.nd.SFGPetClinicReal.services;
 
 import java.util.Set;
 
-import model.Vet;
+import com.nd.SFGPetClinicReal.model.Vet;
 
 public interface VetService extends CrudService<Vet, Long>{
 	

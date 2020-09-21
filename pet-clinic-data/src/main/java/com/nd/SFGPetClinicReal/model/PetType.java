@@ -1,4 +1,4 @@
-package model;
+package com.nd.SFGPetClinicReal.model;
 
 public class PetType extends BaseEntity{
 	private String name;

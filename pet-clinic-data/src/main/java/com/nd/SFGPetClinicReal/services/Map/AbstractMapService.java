@@ -1,4 +1,4 @@
-package services.Map;
+package com.nd.SFGPetClinicReal.services.Map;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
-import model.BaseEntity;
+import com.nd.SFGPetClinicReal.model.BaseEntity;
 
 public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 	protected Map<Long, T> map = new HashMap<>();
