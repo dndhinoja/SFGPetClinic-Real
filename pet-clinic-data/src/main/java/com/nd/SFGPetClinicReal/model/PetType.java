@@ -17,7 +17,7 @@ public class PetType extends BaseEntity{
 	private String name;
 	
 	//@OneToMany(cascade = CascadeType.ALL, mappedBy = "pettype")
-	private Set<Pet> pets = new HashSet<Pet>();
+	//private Set<Pet> pets = new HashSet<Pet>();
 
 	public String getName() {
 		return name;
