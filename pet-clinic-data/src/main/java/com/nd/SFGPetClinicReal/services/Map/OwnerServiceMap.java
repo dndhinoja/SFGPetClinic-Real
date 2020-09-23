@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.nd.SFGPetClinicReal.model.Owner;
 import com.nd.SFGPetClinicReal.model.Pet;
+import com.nd.SFGPetClinicReal.model.PetType;
 import com.nd.SFGPetClinicReal.services.OwnerService;
 import com.nd.SFGPetClinicReal.services.PetService;
 import com.nd.SFGPetClinicReal.services.PetTypeService;
