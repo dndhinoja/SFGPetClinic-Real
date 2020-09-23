@@ -1,5 +1,9 @@
 package com.nd.SFGPetClinicReal.repositories;
 
-public interface PetTypeRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.nd.SFGPetClinicReal.model.PetType;
+
+public interface PetTypeRepository extends CrudRepository<PetType, Long>{
 
 }
