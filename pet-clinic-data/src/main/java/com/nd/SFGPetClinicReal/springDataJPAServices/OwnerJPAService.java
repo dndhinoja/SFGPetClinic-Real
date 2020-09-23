@@ -4,10 +4,15 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
 import com.nd.SFGPetClinicReal.model.Owner;
 import com.nd.SFGPetClinicReal.repositories.OwnRepository;
 import com.nd.SFGPetClinicReal.services.OwnerService;
 
+@Service
+@Profile("springdatajpa")
 public class OwnerJPAService implements OwnerService{
 
 	private final OwnRepository ownRepository;

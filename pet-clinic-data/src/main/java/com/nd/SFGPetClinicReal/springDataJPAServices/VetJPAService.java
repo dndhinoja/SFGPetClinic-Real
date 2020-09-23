@@ -4,13 +4,18 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
 import com.nd.SFGPetClinicReal.model.Vet;
 import com.nd.SFGPetClinicReal.repositories.VetRepository;
 import com.nd.SFGPetClinicReal.services.VetService;
 
+@Service
+@Profile("springdatajpa")
 public class VetJPAService implements VetService{
 	
-	VetRepository vetRepository;
+	private final VetRepository vetRepository;
 	
 	public VetJPAService(VetRepository vetRepository) {
 		super();
@@ -26,8 +31,7 @@ public class VetJPAService implements VetService{
 
 	@Override
 	public Vet findById(Long id) {
-		Optional<Vet> vet = vetRepository.findById(id);
-		return vet.get();
+		return vetRepository.findById(id).orElse(null);
 	}
 
 	@Override
