@@ -10,6 +10,17 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "specialities")
 public class Speciality extends BaseEntity{
@@ -20,12 +31,10 @@ public class Speciality extends BaseEntity{
 	//@ManyToMany(cascade = CascadeType.ALL, mappedBy = "specialities")
 	//private Set<Vet> vets = new HashSet<Vet>();
 	
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-	
+	/*
+	 * public String getDescription() { return description; }
+	 * 
+	 * public void setDescription(String description) { this.description =
+	 * description; }
+	 */	
 }
