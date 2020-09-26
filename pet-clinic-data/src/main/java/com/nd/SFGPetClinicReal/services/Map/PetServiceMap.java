@@ -4,13 +4,16 @@ import java.util.HashSet;
 
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.nd.SFGPetClinicReal.model.Pet;
 import com.nd.SFGPetClinicReal.services.CrudService;
+import com.nd.SFGPetClinicReal.services.PetService;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+@Profile({"default","map"})
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
 	@Override
 	public Set<Pet> findAll() {

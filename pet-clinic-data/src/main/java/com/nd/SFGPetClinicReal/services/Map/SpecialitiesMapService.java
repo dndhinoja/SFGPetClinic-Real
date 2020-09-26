@@ -2,12 +2,14 @@ package com.nd.SFGPetClinicReal.services.Map;
 
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.nd.SFGPetClinicReal.model.Speciality;
 import com.nd.SFGPetClinicReal.services.SpecialitiesService;
 
 @Service
+@Profile({"default","map"})
 public class SpecialitiesMapService extends AbstractMapService<Speciality, Long> implements SpecialitiesService{
 
 	@Override

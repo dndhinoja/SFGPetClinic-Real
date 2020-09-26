@@ -4,6 +4,7 @@ import java.util.Set;
 
 import javax.management.RuntimeErrorException;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.nd.SFGPetClinicReal.model.Owner;
@@ -12,18 +13,14 @@ import com.nd.SFGPetClinicReal.model.PetType;
 import com.nd.SFGPetClinicReal.services.OwnerService;
 import com.nd.SFGPetClinicReal.services.PetService;
 import com.nd.SFGPetClinicReal.services.PetTypeService;
+
 @Service
+@Profile({"default","map"})
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
 	private final PetTypeService petTypeService;
 	private final PetService petService;
 	
-	
-	public OwnerServiceMap() {
-		this.petTypeService = null;
-		this.petService = null;
-	}
-
 	public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
 		super();
 		this.petTypeService = petTypeService;

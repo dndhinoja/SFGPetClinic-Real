@@ -5,14 +5,18 @@ import java.util.Optional;
 import java.util.Set;
 
 import org.hibernate.hql.internal.ast.util.NodeTraverser.VisitationStrategy;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import com.nd.SFGPetClinicReal.model.Visit;
 import com.nd.SFGPetClinicReal.repositories.VisitRepository;
 import com.nd.SFGPetClinicReal.services.VisitService;
 
+@Service
+@Profile("springdatajpa")
 public class VisitJPAService implements VisitService{
 
-	VisitRepository visitRepository;
+	private final VisitRepository visitRepository;
 	
 	public VisitJPAService(VisitRepository visitRepository) {
 		super();

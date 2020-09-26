@@ -2,21 +2,20 @@ package com.nd.SFGPetClinicReal.services.Map;
 
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.nd.SFGPetClinicReal.model.Speciality;
 import com.nd.SFGPetClinicReal.model.Vet;
 import com.nd.SFGPetClinicReal.services.SpecialitiesService;
 import com.nd.SFGPetClinicReal.services.VetService;
+
 @Service
+@Profile({"default","map"})
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
 	private final SpecialitiesService specialitiesService;
 	
-	public VetServiceMap() {
-		this.specialitiesService = null;
-	}
-
 	public VetServiceMap(SpecialitiesService specialitiesService) {
 		super();
 		this.specialitiesService = specialitiesService;
